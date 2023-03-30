@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_edittext_box_unfocused">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/havetext_margin_start"
+        android:layout_marginTop="@dimen/havetext_margin_top"
+        android:layout_marginEnd="@dimen/havetext_margin_end"
+        android:layout_marginBottom="@dimen/havetext_margin_bottom"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/nanum_square_r"
+        android:gravity="center|start"
+        android:textColor="@color/color_text"
+        android:textColorHint="@color/color_tertiary"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textSize="@dimen/login_input_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgView_02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_02"
+        android:layout_width="@dimen/havetext_icon_width"
+        android:layout_height="@dimen/havetext_icon_height"
+        android:layout_marginTop="@dimen/havetext_icon_margin_top"
+        android:layout_marginEnd="@dimen/havetext_icon_margin_end"
+        android:layout_marginBottom="@dimen/havetext_icon_margin_bottom"
+        android:background="@drawable/outline_visibility_off_24"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgView_01"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_01"
+        android:layout_width="@dimen/havetext_icon_width"
+        android:layout_height="@dimen/havetext_icon_height"
+        android:layout_marginTop="@dimen/havetext_icon_margin_top"
+        android:layout_marginEnd="@dimen/havetext_icon_margin_end_large"
+        android:layout_marginBottom="@dimen/havetext_icon_margin_bottom"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgView_02"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

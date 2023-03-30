@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+
+    <declare-styleable name="HaveIconEditText">
+        <attr name="setFocusedColor" format="reference|integer" />
+        <attr name="setUnfocusedColor" format="reference|integer" />
+        <attr name="setIcon01" format="reference|integer" />
+        <attr name="setIcon02" format="reference|integer" />
+        <attr name="focusableInTouchMode" format="reference|boolean" />
+        <attr name="setText" format="reference|string" />
+        <attr name="android:textSize" />
+        <attr name="android:hint" />
+        <attr name="android:inputType" />
+        <attr name="android:textColor" />
+        <attr name="android:gravity" ns1:ignore="ResourceName" />
+        <attr name="android:fontFamily" />
+
+    </declare-styleable>
+</resources>

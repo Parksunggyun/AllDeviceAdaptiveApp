@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_margin">32dp</dimen>
+    <dimen name="login_margin_small">16dp</dimen>
+    <dimen name="login_input_textview_width">640dp</dimen>
+    <dimen name="login_btn_width">240dp</dimen>
+    <dimen name="login_btn_height">240dp</dimen>
+    <dimen name="login_logo_width">480dp</dimen>
+    <dimen name="login_checkbox_width">40dp</dimen>
+
+    <dimen name="login_input_text_size">32sp</dimen>
+    <dimen name="login_checkbox_text_size">32sp</dimen>
+    <dimen name="login_btn_text_size">32sp</dimen>
+    <dimen name="login_bottom_text_size">32sp</dimen>
+</resources>

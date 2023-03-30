@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_margin">8dp</dimen>
+    <dimen name="login_margin_small">4dp</dimen>
+    <dimen name="login_input_textview_width">176dp</dimen>
+    <dimen name="login_btn_width">64dp</dimen>
+    <dimen name="login_btn_height">64dp</dimen>
+    <dimen name="login_logo_width">128dp</dimen>
+    <dimen name="login_checkbox_width">12dp</dimen>
+
+    <dimen name="login_input_text_size">12sp</dimen>
+    <dimen name="login_checkbox_text_size">12sp</dimen>
+    <dimen name="login_btn_text_size">12sp</dimen>
+    <dimen name="login_bottom_text_size">12sp</dimen>
+
+    <dimen name="havetext_margin_bottom">16dp</dimen>
+    <dimen name="havetext_margin_top">16dp</dimen>
+    <dimen name="havetext_margin_end">12dp</dimen>
+    <dimen name="havetext_margin_start">20dp</dimen>
+    <dimen name="havetext_text_size">18sp</dimen>
+    <dimen name="havetext_icon_width">20dp</dimen>
+    <dimen name="havetext_icon_height">20dp</dimen>
+    <dimen name="havetext_icon_margin_top">12dp</dimen>
+    <dimen name="havetext_icon_margin_bottom">12dp</dimen>
+    <dimen name="havetext_icon_margin_end">4dp</dimen>
+    <dimen name="havetext_icon_margin_end_large">12dp</dimen>
+    <dimen name="box_edit_text_border_radius">4dp</dimen>
+</resources>

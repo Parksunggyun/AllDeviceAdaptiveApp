@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AllDeviceAdaptiveApp</string>
+    <string name="txt_hint_id">아이디를 입력하세요</string>
+    <string name="txt_hint_pw">비밀번호를 입력하세요</string>
+</resources>

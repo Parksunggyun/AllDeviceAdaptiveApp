@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF8F7"
+    android:focusable="true"
+    android:nextFocusDown="@id/idTxtView"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomTxtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="4">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/login_logo_width"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:text="로고"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/login_input_text_size"
+            app:layout_constraintBottom_toTopOf="@id/loginBtn"
+            app:layout_constraintDimensionRatio="480:91"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.66" />
+
+        <sung.gyun.alldeviceadaptiveapp.HaveIconEditText
+            android:id="@+id/idTxtView"
+            android:layout_width="@dimen/login_input_textview_width"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/login_margin"
+            android:gravity="start"
+            android:hint="@string/txt_hint_id"
+            android:inputType="text"
+            android:textColor="@color/color_primary"
+            android:textSize="@dimen/login_input_text_size"
+            app:layout_constraintBottom_toTopOf="@id/pwTxtiew"
+            app:layout_constraintEnd_toStartOf="@id/loginBtn"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/loginBtn"
+            app:setFocusedColor="@drawable/border_edittext_box_focused"
+            app:setIcon01="@drawable/baseline_close_24"
+            app:setUnfocusedColor="@drawable/border_edittext_box_unfocused" />
+
+        <sung.gyun.alldeviceadaptiveapp.HaveIconEditText
+            android:id="@+id/pwTxtiew"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|start"
+            android:layout_marginTop="@dimen/login_margin"
+            android:hint="@string/txt_hint_pw"
+            android:inputType="textPassword"
+            android:textSize="@dimen/login_input_text_size"
+            android:textColor="@color/color_primary"
+            android:nextFocusUp="@id/idTxtView"
+            android:nextFocusDown="@id/loginBtn"
+            app:layout_constraintBottom_toBottomOf="@id/loginBtn"
+            app:layout_constraintEnd_toEndOf="@id/idTxtView"
+            app:layout_constraintStart_toStartOf="@id/idTxtView"
+            app:layout_constraintTop_toBottomOf="@id/idTxtView"
+            app:setFocusedColor="@drawable/border_edittext_box_focused"
+            app:setIcon01="@drawable/baseline_close_24"
+            app:setUnfocusedColor="@drawable/border_edittext_box_unfocused" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/autoLoginCheckImgView"
+            android:layout_width="@dimen/login_checkbox_width"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/login_margin"
+            android:src="@drawable/icon_superbrain_2_main_001_checkbox_01"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/pwTxtiew"
+            app:layout_constraintTop_toBottomOf="@id/pwTxtiew" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/login_margin_small"
+            android:gravity="center|start"
+            android:text="로그인 상태 유지"
+            android:textColor="#6C9898"
+            android:textSize="@dimen/login_checkbox_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/autoLoginCheckImgView"
+            app:layout_constraintStart_toEndOf="@id/autoLoginCheckImgView"
+            app:layout_constraintTop_toTopOf="@id/autoLoginCheckImgView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loginBtn"
+            android:elevation="@dimen/elevation"
+            android:layout_width="@dimen/login_btn_width"
+            android:layout_height="@dimen/login_btn_height"
+            android:gravity="center"
+            android:background="@drawable/login_btn_unfocused"
+            android:fontFamily="@font/nanum_square_b"
+            android:text="로그인"
+            android:textSize="@dimen/login_btn_text_size"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/idTxtView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.66" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bottomTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="아이디, 비밀번호를 잊으신 경우에는 (주)로완에 문의해주세요"
+        android:textColor="#6C9898"
+        android:textSize="@dimen/login_bottom_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLayout"
+        app:layout_constraintVertical_weight="1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#EAEEEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottomTxtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
